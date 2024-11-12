@@ -9,8 +9,7 @@ Este es un proyecto de API backend creado con Node.js, Express, TypeScript y Mon
 - [Configuración](#configuración)
 - [Scripts Disponibles](#scripts-disponibles)
 - [Uso](#uso)
-- [Dependencias](#dependencias)
-- [DevDependencies](#devdependencies)
+
 
 
 ## Requisitos Previos
