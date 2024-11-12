@@ -45,6 +45,7 @@ npm run dev: Ejecuta el proyecto en modo de desarrollo con nodemon para recargar
 npm run build: Compila el código TypeScript en JavaScript y genera la carpeta dist.
 
 
-## Ejecución en Modo de Desarrollo
+## Uso
+Ejecución en Modo de Desarrollo
 ```bash
 npm run dev
