@@ -39,11 +39,9 @@ MONGO_URI=<TU_URI_MONGO> # URI de conexión a MongoDB
 
 ## Scripts Disponibles
 En el archivo package.json se incluyen los siguientes scripts:
-npm run start: Compila el proyecto y ejecuta el servidor en producción (archivo dist/server.js).
-
-npm run dev: Ejecuta el proyecto en modo de desarrollo con nodemon para recargar automáticamente.
-
-npm run build: Compila el código TypeScript en JavaScript y genera la carpeta dist.
+- npm run start: Compila el proyecto y ejecuta el servidor en producción (archivo dist/server.js).
+- npm run dev: Ejecuta el proyecto en modo de desarrollo con nodemon para recargar automáticamente.
+- npm run build: Compila el código TypeScript en JavaScript y genera la carpeta dist.
 
 
 ## Uso
