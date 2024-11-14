@@ -20,7 +20,7 @@ export const createExpense = async (req: Request, res: Response) => {
     const expense = await createExpenseService(expenseData);
     res
       .status(201)
-      .json({ message: "Expense registered successfully", expense });
+      .json({ message: "Expense registered successfully", expense , success: true });
   } catch (error) {
     console.error({ error });
     res.status(500).json({ message: "Internal server error", success: false });
@@ -100,10 +100,10 @@ export const updateExpense = async (req: Request, res: Response) => {
     }
     res
       .status(200)
-      .json({ message: "Expense updated successfully", updatedExpense });
+      .json({ message: "Expense updated successfully", updatedExpense , success: true });
   } catch (error) {
     console.error({ error });
-    res.status(500).json({ message: "Error updating expense" });
+    res.status(500).json({ message: "Error updating expense"  , success: false});
   }
 };
 
@@ -114,9 +114,9 @@ export const deleteExpense = async (req: Request, res: Response) => {
     if (!deletedExpense) {
       return res.status(404).json({ message: "Expense not found" });
     }
-    res.status(200).json({ message: "Expense deleted successfully" });
+    res.status(200).json({ message: "Expense deleted successfully", success: true });
   } catch (error) {
     console.error({ error });
-    res.status(500).json({ message: "Error deleting expense" });
+    res.status(500).json({ message: "Error deleting expense" , success: false});
   }
 };
